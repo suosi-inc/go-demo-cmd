@@ -1,0 +1,10 @@
+app:
+  name: cmd
+
+logger:
+  file: cmd.log
+  format: text
+  level: info
+  maxSize: 128
+  maxAge: 3
+  maxBackups: 7
