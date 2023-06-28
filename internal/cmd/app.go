@@ -1,9 +1,9 @@
-package internal
+package cmd
 
 import (
 	"github.com/spf13/viper"
-	"github.com/suosi-inc/go-demo/cmd/config"
-	"github.com/suosi-inc/go-demo/cmd/pkg/log"
+	"github.com/suosi-inc/go-demo/cmd/internal/cmd/config"
+	"github.com/suosi-inc/go-demo/cmd/internal/pkg/log"
 )
 
 var (

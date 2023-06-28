@@ -5,11 +5,18 @@ import (
 	"fmt"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/suosi-inc/go-demo/cmd/internal"
-	"github.com/suosi-inc/go-demo/cmd/pkg"
+	"github.com/suosi-inc/go-demo/cmd/internal/cmd"
+	"github.com/suosi-inc/go-demo/cmd/internal/pkg"
 	"log"
 	"os"
 )
+
+func main() {
+	if err := AppCmd.Execute(); err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+}
 
 const (
 	AppName      = "cmd"
@@ -34,16 +41,12 @@ var (
 			// Init zap logger and set to global log
 			pkg.InitZapLogger()
 		},
-		RunE: func(cmd *cobra.Command, args []string) error {
+		RunE: func(command *cobra.Command, args []string) error {
 			// New app and run
-			return internal.NewApp()
+			return cmd.NewApp()
 		},
 	}
 )
-
-func main() {
-	Execute()
-}
 
 // init
 func init() {
@@ -127,11 +130,4 @@ out:
 	}
 
 	log.Println("App using merge config file:", configFilePath)
-}
-
-func Execute() {
-	if err := AppCmd.Execute(); err != nil {
-		fmt.Println(err)
-		os.Exit(1)
-	}
 }
