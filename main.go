@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/suosi-inc/go-demo/cmd/internal/cmd"
+	"github.com/suosi-inc/go-demo/cmd/internal/app"
 	"github.com/suosi-inc/go-demo/cmd/internal/pkg"
 	"log"
 	"os"
@@ -41,9 +41,9 @@ var (
 			// Init zap logger and set to global log
 			pkg.InitZapLogger()
 		},
-		RunE: func(command *cobra.Command, args []string) error {
+		RunE: func(cmd *cobra.Command, args []string) error {
 			// New app and run
-			return cmd.NewApp()
+			return app.NewApp()
 		},
 	}
 )
