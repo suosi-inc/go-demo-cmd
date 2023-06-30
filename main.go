@@ -3,12 +3,13 @@ package main
 import (
 	"bytes"
 	"fmt"
+	"log"
+	"os"
+
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"github.com/suosi-inc/go-demo/cmd/internal/app"
 	"github.com/suosi-inc/go-demo/cmd/internal/pkg"
-	"log"
-	"os"
 )
 
 func main() {

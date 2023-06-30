@@ -1,9 +1,10 @@
 package pkg
 
 import (
+	"os"
+
 	"github.com/suosi-inc/go-demo/cmd/internal/pkg/log"
 	"gopkg.in/natefinch/lumberjack.v2"
-	"os"
 
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
