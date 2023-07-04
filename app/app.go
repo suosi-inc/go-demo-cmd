@@ -2,8 +2,8 @@ package app
 
 import (
 	"github.com/spf13/viper"
-	"github.com/suosi-inc/go-demo/cmd/internal/app/config"
-	"github.com/suosi-inc/go-demo/cmd/internal/pkg/log"
+	"github.com/suosi-inc/go-demo/cmd/config"
+	"github.com/suosi-inc/go-demo/cmd/pkg/log"
 )
 
 var (

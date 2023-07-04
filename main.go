@@ -8,8 +8,8 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/suosi-inc/go-demo/cmd/internal/app"
-	"github.com/suosi-inc/go-demo/cmd/internal/pkg"
+	"github.com/suosi-inc/go-demo/cmd/app"
+	"github.com/suosi-inc/go-demo/cmd/pkg"
 )
 
 func main() {

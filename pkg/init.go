@@ -3,7 +3,7 @@ package pkg
 import (
 	"os"
 
-	"github.com/suosi-inc/go-demo/cmd/internal/pkg/log"
+	"github.com/suosi-inc/go-demo/cmd/pkg/log"
 	"gopkg.in/natefinch/lumberjack.v2"
 
 	"github.com/spf13/viper"
