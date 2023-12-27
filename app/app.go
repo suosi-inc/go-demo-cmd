@@ -1,6 +1,8 @@
 package app
 
 import (
+	"fmt"
+
 	"github.com/spf13/viper"
 	"github.com/suosi-inc/go-demo/cmd/config"
 	"github.com/suosi-inc/go-demo/cmd/pkg/log"
@@ -29,6 +31,9 @@ func bootstrap() {
 		panic("Unable to decode config into struct: ")
 	}
 	log.Info("Config into struct", log.Any("cfg", cfg))
+
+	fmt.Println(cfg.Test)
+	fmt.Println(cfg.Test["abc"])
 }
 
 // setupService Setup service and set di

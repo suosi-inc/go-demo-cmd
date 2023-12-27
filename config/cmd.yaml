@@ -8,3 +8,7 @@ logger:
   maxSize: 128
   maxAge: 3
   maxBackups: 7
+
+test:
+  abc: 123
+  bcd: 234
