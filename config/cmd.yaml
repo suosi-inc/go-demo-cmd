@@ -10,5 +10,5 @@ logger:
   maxBackups: 7
 
 test:
-  abc: 123
-  bcd: 234
+  bob: HelloWorld
+  Tracy: 12345
