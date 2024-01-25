@@ -2,12 +2,7 @@ package app
 
 import (
 	"github.com/spf13/viper"
-	"github.com/suosi-inc/go-demo/cmd/config"
 	"github.com/suosi-inc/go-demo/cmd/pkg/log"
-)
-
-var (
-	cfg = config.Cfg
 )
 
 // NewApp New app

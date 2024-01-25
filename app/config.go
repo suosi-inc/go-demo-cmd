@@ -1,9 +1,9 @@
-package config
+package app
 
-// Cfg is singleton
-var Cfg = &cfg{}
+// cfg is singleton
+var cfg = &config{}
 
-type cfg struct {
+type config struct {
 	App struct {
 		Name string `json:"name"`
 	} `json:"app"`
