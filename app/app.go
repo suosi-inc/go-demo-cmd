@@ -13,7 +13,7 @@ func NewApp() error {
 	// Setup service and set di
 	setupDi()
 
-	log.Infof(cfg.Test["bob"])
+	log.Infof(Cfg.Test["bob"])
 
 	return nil
 }
@@ -21,11 +21,11 @@ func NewApp() error {
 // bootstrap Bootstrap app
 func bootstrap() {
 	// Config map into struct
-	err := viper.Unmarshal(&cfg)
+	err := viper.Unmarshal(&Cfg)
 	if err != nil {
 		panic("Unable to decode config into struct: ")
 	}
-	log.Info("Config into struct", log.Any("cfg", cfg))
+	log.Info("Config into struct", log.Any("cfg", Cfg))
 }
 
 // setupService Setup service and set di
