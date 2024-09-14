@@ -8,7 +8,3 @@ logger:
   maxSize: 128
   maxAge: 3
   maxBackups: 7
-
-test:
-  bob: HelloWorld
-  Tracy: 12345

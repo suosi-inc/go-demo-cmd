@@ -15,5 +15,4 @@ type cfg struct {
 		MaxAge     int    `json:"maxAge"`
 		MaxBackups int    `json:"maxBackups"`
 	} `json:"logger"`
-	Test map[string]string `json:"test"`
 }

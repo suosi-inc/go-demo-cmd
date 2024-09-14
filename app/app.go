@@ -3,6 +3,7 @@ package app
 import (
 	"github.com/spf13/viper"
 	"github.com/suosi-inc/go-demo/cmd/pkg/log"
+	"github.com/x-funs/go-fun"
 )
 
 // NewApp New app
@@ -13,7 +14,7 @@ func NewApp() error {
 	// Setup service and set di
 	setupDi()
 
-	log.Infof(Cfg.Test["bob"])
+	log.Infof("DateTime : %s", fun.Date())
 
 	return nil
 }
